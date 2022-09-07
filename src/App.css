@@ -1,0 +1,76 @@
+:root {
+  --main: #F9F871;
+  --secondary: #FFC75F;
+  --third: #845EC2;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 100vh;
+  background: var(--secondary);
+}
+
+h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  border-style: dashed;
+}
+
+h2 {
+  font-size: 20px;
+  color: var(--third);
+}
+
+
+
+.Card {
+  text-align: center;
+  background: var(--main);
+  border-radius: 50px;
+  padding: 50px;
+  box-shadow: -21px 19px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -21px 19px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -21px 19px 5px 0px rgba(0,0,0,0.75);
+}
+
+.CardGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: start;
+  gap: 50px;
+}
+
+.CardGrid h4 {
+  font-size: 30px;
+}
+
+.CardGrid img {
+  height: 10vh;
+  width: 10vh;
+}
+
+button {
+  border-radius: 50px;
+  border-style: outset;
+  background: var(--third);
+  color: white;
+}
